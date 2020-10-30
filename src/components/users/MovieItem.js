@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const MovieItem = ({ movie: { title, poster_path, overview, backdrop_path, id } }) => {
+const MovieItem = ({ movie: { Title, poster_path, overview, backdrop_path, id } }) => {
   let movieImageUrl = 'https://image.tmdb.org/t/p/original/' + backdrop_path;
   return (
     <div className="card text-center">
@@ -13,11 +13,11 @@ const MovieItem = ({ movie: { title, poster_path, overview, backdrop_path, id } 
         style={{ width: "200px" }}
       />
 
-      <h3>{title}</h3>
+      <h3>{Title}</h3>
       <div>
         <Link to={`/movie/${id}`} className="btn btn-dark btn-sm my-1">
           {" "}
-          {title} {" "}
+          {Title} {" "}
         </Link>
       </div>
     </div>

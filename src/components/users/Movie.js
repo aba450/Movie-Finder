@@ -14,10 +14,10 @@ const Movie = ({ match }) => {
   }, []);
 
   const {
-    title,
+    Title,
     backdrop_path,
     poster_path,
-    overview,
+    Description,
     id,
     status,
     homepage,
@@ -44,13 +44,13 @@ const Movie = ({ match }) => {
             alt=""
             style={{ width: "250px" }}
           />
-          <h1>{title}</h1>
+          <h1>{Title}</h1>
           <p> {tagline}</p>
         </div>
         <div>
     
             <Fragment>
-              <p>{overview}</p>
+              <p>{Description}</p>
             </Fragment>
         
           <a href={movieImageUrl} className="btn btn-dark my-1">
