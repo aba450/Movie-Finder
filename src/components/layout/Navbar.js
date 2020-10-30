@@ -24,7 +24,7 @@ const Navbar = ({ icons, title }) => {
 
 Navbar.defaultProps = {
   title: "Netflix Clone",
-  icons: "fab fa-youtube",
+  icons: "fab fa-netflix",
 };
 Navbar.propTypes = {
   title: PropTypes.string.isRequired,
